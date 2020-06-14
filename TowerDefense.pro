@@ -16,21 +16,29 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    bullet.cpp \
     choicepage1.cpp \
     choicepage2.cpp \
     endpage.cpp \
+    enemy.cpp \
     main.cpp \
     round1.cpp \
     round2.cpp \
-    startpage.cpp
+    startpage.cpp \
+    tower.cpp \
+    towerbase.cpp
 
 HEADERS += \
+    bullet.h \
     choicepage1.h \
     choicepage2.h \
     endpage.h \
+    enemy.h \
     round1.h \
     round2.h \
-    startpage.h
+    startpage.h \
+    tower.h \
+    towerbase.h
 
 FORMS += \
     startpage.ui

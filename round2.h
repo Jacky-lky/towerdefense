@@ -7,6 +7,7 @@
 #include <QPushButton>
 #include <QPaintEvent>
 #include <QPixmap>
+#include "towerbase.h"
 
 class round2 : public QWidget
 {

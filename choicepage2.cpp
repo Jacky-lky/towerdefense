@@ -2,17 +2,17 @@
 
 choicepage2::choicepage2(QWidget *parent) : QWidget(parent)
 {
-    this->setFixedSize(1000,800);
+    this->setFixedSize(800,600);
     back.setParent(this);
     back.setText("backward");
     back.resize(80,60);
-    back.move(700,700);
+    back.move(700,500);
     back.setStyleSheet("background-color:green;");
     game2.setParent(this);
     game2.setText("2");
     game2.resize(80,60);
     game2.setStyleSheet("background-color:green;");
-    game2.move(0,700);
+    game2.move(0,500);
     connect(&back,&QPushButton::clicked,[=](){
         this->hide();
         emit goback();

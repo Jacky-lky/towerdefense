@@ -13,5 +13,6 @@
         <file>images/tower1plus.jpg</file>
         <file>images/tower2.jpg</file>
         <file>images/tower2plus.jpg</file>
+        <file>images/towerbase.jpg</file>
     </qresource>
 </RCC>

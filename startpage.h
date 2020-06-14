@@ -30,8 +30,8 @@ private:
     QPushButton start;
     choicepage1 choice1;
     choicepage2 choice2;
-    round1 r1;
-    round2 r2;
+    round1 *r1;
+    round2 *r2;
     endpage end;
 };
 #endif // STARTPAGE_H

@@ -2,7 +2,7 @@
 
 endpage::endpage(QWidget *parent) : QWidget(parent)
 {
-    this->setFixedSize(1000,800);
+    this->setFixedSize(800,600);
     endgame.setParent(this);
     endgame.setStyleSheet("background-color:lightgreen;");
     endgame.setText("End");
