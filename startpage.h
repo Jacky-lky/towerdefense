@@ -8,7 +8,6 @@
 #include <QPaintEvent>
 #include "choicepage1.h"
 #include "choicepage2.h"
-#include "endpage.h"
 #include "round1.h"
 #include "round2.h"
 
@@ -32,6 +31,5 @@ private:
     choicepage2 choice2;
     round1 *r1;
     round2 *r2;
-    endpage end;
 };
 #endif // STARTPAGE_H

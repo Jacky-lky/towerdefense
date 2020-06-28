@@ -33,6 +33,8 @@ Startpage::Startpage(QWidget *parent)
         connect(r1,&round1::gochoice1,[=]()
         {
             choice1.show();
+            delete r1;
+            r1=nullptr;
         });//完成游戏页1到选择页1的切换
     });//完成选择页1到游戏页1的切换
     connect(&choice2,&choicepage2::goback,[=](){
@@ -51,6 +53,8 @@ Startpage::Startpage(QWidget *parent)
         connect(r2,&round2::gochoice2,[=]()
         {
             choice2.show();
+            delete r2;
+            r2=nullptr;
         });//经过反复尝试，必须将round2的信号连接在choice2内
     });//完成选择页2到游戏页2的切换
 }

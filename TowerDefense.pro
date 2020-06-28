@@ -4,6 +4,8 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 CONFIG += c++11
 
+QT += multimediawidgets
+
 # The following define makes your compiler emit warnings if you use
 # any Qt feature that has been marked deprecated (the exact warnings
 # depend on your compiler). Please consult the documentation of the
@@ -19,26 +21,27 @@ SOURCES += \
     bullet.cpp \
     choicepage1.cpp \
     choicepage2.cpp \
-    endpage.cpp \
     enemy.cpp \
     main.cpp \
     round1.cpp \
     round2.cpp \
     startpage.cpp \
     tower.cpp \
-    towerbase.cpp
+    towerbase.cpp \
+    waypoint.cpp
 
 HEADERS += \
     bullet.h \
     choicepage1.h \
     choicepage2.h \
-    endpage.h \
     enemy.h \
     round1.h \
     round2.h \
     startpage.h \
     tower.h \
-    towerbase.h
+    towerbase.h \
+    utility.h \
+    waypoint.h
 
 FORMS += \
     startpage.ui

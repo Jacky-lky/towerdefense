@@ -14,7 +14,10 @@ public:
     towerbase();
 
 signals:
-
+    void setking();
+    void setqueen();
+    void advance();
+    void remove();
 };
 
 #endif // TOWERBASE_H
