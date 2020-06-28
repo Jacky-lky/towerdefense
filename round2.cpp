@@ -430,7 +430,7 @@ round2::round2(QWidget *parent) : QWidget(parent)
         }
     }
     //一个循环结构的时间检定，30ms更新一次页面，
-    QTimer *timer = new QTimer(this);
+    timer = new QTimer(this);
     connect(timer, SIGNAL(timeout()), this, SLOT(updateMap()));
     timer->start(30);
 
@@ -446,6 +446,7 @@ void round2::paintEvent(QPaintEvent *)
         QPainter painter(this);
         painter.setPen(QPen(Qt::red));
         painter.drawText(rect(), Qt::AlignCenter, text);
+        timer->stop();//新发现的BUG，及时修改
         return;
     }
     else if(round2_ifwin==true && round2_ended==false)

@@ -9,7 +9,7 @@ static const int removevalue=50; //炮塔回收增加50金币
 
 round1::round1(QWidget *parent) : QWidget(parent)
   ,round1_waves(1)
-  ,round1_playerHp(50)
+  ,round1_playerHp(30)
   ,round1_playrGold(10000)
   ,round1_ended(false)
   ,round1_ifwin(true)
@@ -435,7 +435,7 @@ round1::round1(QWidget *parent) : QWidget(parent)
         }
     }
     //一个循环结构的时间检定，30ms更新一次页面，
-    QTimer *timer = new QTimer(this);
+    timer = new QTimer(this);
     connect(timer, SIGNAL(timeout()), this, SLOT(updateMap()));
     timer->start(30);
     // 设置300ms后游戏启动,singleShot是在该时间间隔之后运行一次,仅一次
@@ -450,6 +450,7 @@ void round1::paintEvent(QPaintEvent *)
         QPainter painter(this);
         painter.setPen(QPen(Qt::red));
         painter.drawText(rect(), Qt::AlignCenter, text);
+        timer->stop();
         return;
     }
     else if(round1_ifwin==true && round1_ended==false)

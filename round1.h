@@ -8,6 +8,7 @@
 #include <QPaintEvent>
 #include <QPixmap>
 #include <QList>
+#include <QTimer>
 #include "towerbase.h"
 #include "waypoint.h"
 #include "enemy.h"
@@ -38,6 +39,7 @@ private:
     towerbase *base6;
     towerbase *base7;
     towerbase *base8;
+    QTimer *timer;
     QMediaPlayer *groundmusic;
 public:
     QList<Waypoint*> enemy_waypointlist1;
